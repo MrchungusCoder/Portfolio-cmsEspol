@@ -1,0 +1,46 @@
+
+// BASES
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+// h1,h2 {
+//     font-family: var(--paragraph);
+// }
+
+// p, a, li {
+//     font-family: var(--paragraph);
+// }
+
+// RESETS
+
+ul {
+    li {
+        list-style: none;
+    }
+    
+}
+

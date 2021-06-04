@@ -1,0 +1,121 @@
+
+// //   LAYOUTS
+//   .main_container-right {
+//       width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     flex: 1 0 80%;
+//     position: relative;
+
+//     .hero {
+//         position: relative;
+
+//         video {
+//             position: fixed;
+//             top: 0;
+//             left: 0;
+//             min-width: 100%;
+//             min-height: 100%;
+//             object-fit: cover;
+        
+//         }
+
+//         &::after {
+//             content: "";
+//             position: absolute;
+//             top: 0;
+//             left: 0;
+//             height: 100%;
+//             width: 100%;
+//             z-index: 20;
+//             background: rgba(0, 0, 0, 1);
+//         }
+  
+//     }
+//   }
+
+
+.main_container--navbar {
+  position: fixed;
+  top: 0;
+  min-height: 100vh;
+  width: 18%;
+  background: linear-gradient(60deg, 
+    rgba(126, 213, 111, 0.8),
+    rgba(40, 180, 133, 0.8));
+  box-shadow: .1rem 0 1.2rem .2rem rgba(0, 0, 0, .5);
+  display: flex;
+  flex-flow: column;
+
+  .navbar {
+        padding-top: 7rem;
+
+        &_logo {
+          text-align: center;
+        }
+
+        &_container {
+                  padding: 2rem 0;
+                  text-align: center;
+          
+                  &--list {
+                    font-family: $paragraph;
+                    
+                    padding: 1.4rem 0;
+                    font-size: 2rem;
+          
+                  }
+          
+                  &--link {
+                      color: #fff;
+                  }
+          
+        }
+  }
+}
+
+.main_container--right {
+  margin-left: 18%;
+ 
+
+  .hero {
+    min-height: 100vh;
+    position: relative;
+
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to right, rgba(0, 0, 0, .4)), url(https://images.pexels.com/photos/3493777/pexels-photo-3493777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      z-index: -1;
+    }
+
+    &_container {
+      font-family: 'Open Sans', sans-serif;
+      color: rgb(238, 238, 238);
+
+        &--word {
+          font-size: 4rem;
+        }
+
+        &--author {
+          font-size: 7rem;
+        }
+
+        &--subtitle {
+          font-size: 3rem;
+        }
+    }
+
+
+  }
+
+}
