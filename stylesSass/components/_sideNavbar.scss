@@ -1,0 +1,61 @@
+
+/////////////////////////////////////////////// NAVBAR
+.main_container--navbar {
+    position: fixed;
+    top: 0;
+    min-height: 100vh;
+    width: 18%;
+    background: linear-gradient(60deg, 
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8));
+    box-shadow: .1rem 0 1.2rem .2rem rgba(0, 0, 0, .5);
+    display: flex;
+    flex-flow: column;
+    // justify-content: center;
+  
+  .navbar {
+    text-align: center;
+    padding-top: 7rem;
+  
+      &_container {
+        padding: 2rem 0;
+            
+           &--list {
+              font-family: $paragraph;
+              padding: 1.4rem 0;
+              font-size: 2rem;
+              position: relative;
+            //   margin: 2rem 0;
+
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 5px;
+                background: white;
+                transform-origin: center;
+                transform: scaleY(0);
+                transition: transform .2s, 
+                            width .4s cubic-bezier(1,0,0,1) .2s,
+                            background-color .1s;
+              }
+
+              &:hover::before {
+                transform: scaleY(1);
+                width: 100%;
+                background: white;
+                z-index: -1;
+            }
+            }
+            
+            &--link {
+              color: black;
+            }
+          }
+    }
+  }
+
+
+  
