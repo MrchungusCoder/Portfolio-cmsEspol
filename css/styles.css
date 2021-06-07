@@ -15,6 +15,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 100vh;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2328b485' fill-opacity='0.09' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 img {
@@ -35,6 +37,35 @@ ul li {
   --paragraph: var('Open Sans', sans-serif);
 }
 
+button {
+  border: none;
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background: linear-gradient(to right, #7ed56f, #28b485);
+  padding: 1.2rem 2rem;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: #000;
+}
+
+.hire_btn, .fa {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.hire_btn:hover, .fa:hover {
+  -webkit-transform: translateY(-3px) scale(1.1);
+          transform: translateY(-3px) scale(1.1);
+}
+
+.hire_btn:focus, .fa:focus {
+  -webkit-transform: translateY(-1px) scale(1);
+          transform: translateY(-1px) scale(1);
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
 .main_container--navbar {
   position: fixed;
   top: 0;
@@ -50,6 +81,8 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
+  -webkit-transition: all 500ms linear;
+  transition: all 500ms linear;
 }
 
 .main_container--navbar .navbar {
@@ -179,7 +212,7 @@ ul li {
 }
 
 .main_container--right .hero_container {
-  margin: 0 15% 0 0;
+  margin: 0 15%;
   font-family: 'Open Sans', sans-serif;
   color: #eeeeee;
   position: relative;
@@ -210,5 +243,215 @@ ul li {
   -webkit-animation: heroEntranceLeft 2s;
           animation: heroEntranceLeft 2s;
   padding-left: 10px;
+}
+
+.aboutMe {
+  min-height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.aboutMe .about_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+  margin: 40px;
+}
+
+.aboutMe .about_container--right {
+  background-color: white;
+  min-width: 257px;
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aboutMe .about_container--right .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutMe .about_container--right .box::before {
+  content: "";
+  border-radius: 20px;
+  background: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background: linear-gradient(to right, #7ed56f, #28b485);
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 0 40%);
+          clip-path: polygon(0 0, 100% 0, 100% 20%, 0 40%);
+}
+
+.aboutMe .about_container--right .box .img_container {
+  max-width: 150px;
+  z-index: 10;
+}
+
+.aboutMe .about_container--right .box .img_container img {
+  border-radius: 50%;
+}
+
+.aboutMe .about_container--right .box .text_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutMe .about_container--right .box .text_container > p:last-child {
+  margin: 1.4rem 0 2rem;
+}
+
+.aboutMe .about_container--right .box .text_container--title {
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+}
+
+.aboutMe .about_container--right .box .text_container--subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.aboutMe .about_container--right .box .text_container--description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  max-width: 200px;
+}
+
+.aboutMe .about_container--right .follow_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.aboutMe .about_container--right .follow_container > * {
+  margin: 0 10px;
+}
+
+.aboutMe .about_container--right .follow_container .follow_icons .fab {
+  cursor: pointer;
+}
+
+.aboutMe .about_container--right .follow_container .follow_icons .fab:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.aboutMe .about_container--right .follow_container .follow_icons .fa-github-square {
+  color: #181818;
+}
+
+.aboutMe .about_container--right .follow_container .follow_icons .fa-linkedin {
+  color: #0e0eff;
+}
+
+.aboutMe .about_container--right .follow_container .follow_icons .fa-twitter-square {
+  color: #05c0ff;
+}
+
+.aboutMe .about_container--left {
+  padding-top: 2rem;
+  margin-left: 3rem;
+}
+
+.aboutMe .about_container--left .about_container--title {
+  width: 40%;
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  border-bottom: 6px solid #55c57a;
+}
+
+.aboutMe .about_container--left .about_container--content {
+  margin: 1.5rem 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.aboutMe .about_container--left .about_container--icons {
+  margin-top: 3rem;
+  font-size: 6rem;
+}
+
+.aboutMe .about_container--left .about_container--icons .fa-html5 {
+  color: orangered;
+}
+
+.aboutMe .about_container--left .about_container--icons .fa-css3-alt {
+  color: blue;
+}
+
+.aboutMe .about_container--left .about_container--icons .fa-js {
+  color: #eded01;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 55.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 50.5%;
+  }
+  .main_container--navbar {
+    position: fixed;
+    left: -100%;
+  }
+  .main_container--navbar #toggle_btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 150px;
+    color: #55c57a;
+    font-size: 5rem;
+  }
+  .main_container--right {
+    margin: unset;
+  }
+  .main_container--right .hero {
+    place-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about_container {
+    max-width: 320px;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  .about_container--right, .about_container--left {
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

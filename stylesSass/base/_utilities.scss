@@ -12,6 +12,11 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
+$linear-bg-color:linear-gradient(
+    to right,
+    $color-primary-light, 
+    $color-primary-dark);;
+
 $color-gray-dark: #777;
 $color-black: #000;
 
@@ -19,4 +24,7 @@ $color-black: #000;
 $title: 'Lato', sans-serif;
 $paragraph: 'Open Sans', sans-serif;
 
+// FONT SIZES
+$subtitles_sizes: 3.6rem;
+$paragraph_sizes: 1.6rem;
 

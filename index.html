@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Diego Riera Website</title>
 
     <!-- FONTS -->
@@ -20,9 +21,12 @@
 
 <body>
 
-    <!-- CONTAINER -->
+ 
+<!-- LEFT SECTION -->
+        <div class="main_container--navbar navar active">
 
-        <div class="main_container--navbar">
+            <!-- <button id="toggle_btn" class="toggle_menu">Open</button>
+            <button class="closer close">X</button> -->
 
             <nav class="navbar">
 
@@ -32,15 +36,15 @@
 
                 <ul class="navbar_container">
                     <li class="navbar_container--list">
-                        <a href="" class="navbar_container--link" id="link">Home</a>
+                        <a href="#home" class="navbar_container--link" id="link">Home</a>
                     </li>
 
                     <li class="navbar_container--list">
-                        <a href="" class="navbar_container--link">Projects</a>
+                        <a href="#aboutSection" class="navbar_container--link">About me</a>
                     </li>
 
                     <li class="navbar_container--list">
-                        <a href="" class="navbar_container--link">About me</a>
+                        <a href="" class="navbar_container--link">Proyects</a>
                     </li>
 
                     <li class="navbar_container--list">
@@ -54,11 +58,13 @@
 
         </div>
 
-
+<!-- RIGHT SECTION -->
         <div class="main_container--right">
 
-            <!-- HERO -->
-           <section class="hero">
+        <!-- HERO -->
+        
+
+           <section class="hero" id="home">
 				<!-- <video src="/Pexels Videos 4098.mp4" id="video" autoplay muted loop>
                 </video> -->
                 <div class="hero_container">
@@ -73,6 +79,90 @@
                 </div>
 
            </section>
+
+<!-- ABOUT ME SECTION-->
+           
+    <section class="aboutMe" id="aboutSection">
+            
+        <div class="about_container">
+
+            <div class="about_container--right">
+              
+                <div class="box">
+                     
+                     <div class="img_container">
+                      <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+                        
+                    </div>
+
+                    <div class="text_container">
+                        <h2 class="text_container--title">
+                          Diego Riera
+                        </h2>
+                      
+                        <p class="text_container--subtitle">
+                          Web developer
+                        </p>
+                      
+                      <p class="text_container--description">
+                          Lorem ipsum dolor sit amet consectetur,adipisicing elit.
+                      </p>
+                    </div>
+                
+                    <button class="hire_btn">
+                        Contact me
+                    </button>
+                </div>
+              
+                <div class="follow_container">
+                
+                    <div class="follow_icons follow1">
+                        <a href="https://github.com/MrchungusCoder/Portfolio-cmsEspol.git" target="_blank" class="img-custom">
+                            <i class="fab fa-github-square fa-4x"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="follow_icons follow3">
+                        <a class="img-custom">
+                            <i class="fab fa-linkedin fa-4x"></i>
+                        </a>
+                    </div>
+
+                    <div class="follow_icons follow2">
+                        <a class="img-custom">
+                            <i class="fab fa-twitter-square fa-4x"></i>
+                        </a>
+                    </div>
+                
+                </div>
+                    
+              
+            </div>
+      
+            <div class="about_container--left">
+                    <h2 class="about_container--title_1 about_container--title">
+                        
+                        <div class="title_bar">About Me</div>
+                    </h2>
+    
+                    <p class="about_container--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae molestias, veritatis corrupti non nulla fugit impedit debitis asperiores labore iusto ullam tempore a accusamus ipsam dignissimos doloribus nihil dolore!
+                    </p>
+    
+                    <h2 class="about_container--title_2 about_container--title">
+                        <div class="title_bar">Technologies</div>
+                    </h2>
+    
+                    <div class="about_container--icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js"></i>
+                    </div>
+                </div>
+                  
+    </div>
+
+<!-- PROJECTS SECTION -->
+
 
 
         </div>
