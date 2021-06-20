@@ -1,5 +1,16 @@
 
 /////////////////////////////////////////////// NAVBAR
+
+.toggle {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 2rem;
+  z-index: 2000;
+}
+
 .main_container--navbar {
     position: fixed;
     top: 0;
@@ -11,9 +22,14 @@
     box-shadow: .1rem 0 1.2rem .2rem rgba(0, 0, 0, .5);
     display: flex;
     flex-flow: column;
-    transition: all 500ms linear;
-    // justify-content: center;
+    // transition: all 500ms linear;
     
+    .close {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   
   .navbar {
     text-align: center;

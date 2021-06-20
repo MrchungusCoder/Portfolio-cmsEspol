@@ -1,0 +1,99 @@
+
+.contact-section {
+    background: $linear-bg-color-card;
+    padding: 4rem 2rem;
+    width: 100%;
+    margin: 4rem auto 0px;  
+    font-family: $paragraph;
+    font-size: $paragraph_sizes;
+
+    .container-form {
+        padding: 5rem 0;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 1024px;
+        margin: auto;  
+
+        .right-side, .left-side {
+            flex-basis: 50%;
+            color: white;
+        }
+
+        .left-side {
+            padding-right: 3.5rem;
+
+            & > * {padding: 0 0px 1.5rem;}
+
+            h2{
+            font-size: 3.5rem;
+            color: $color-black;
+            text-shadow: 3px 3px 1px $color-primary-dark;}
+
+            h2, p{text-align: right;}
+
+            .icon {
+                display: flex;
+                justify-content: center;
+
+                &-box, .user-links {
+                    display: block;
+                    text-align: center;
+                    color: white;
+                }
+                &-box {
+                    padding: 0 2rem;
+                }
+
+                .user-links {
+                    cursor: pointer;
+                    transition: .2s ease-in-out;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        
+        .right-side {
+
+            .form input, .textarea{
+                outline: none;
+                border: 1px solid white;
+                margin: 1rem 0;
+                background-color: white;
+                color: black;
+            }
+
+            .form {
+                display: flex;
+                flex-flow: column;
+
+                &-box {display: block;}
+
+                .textarea {
+                    resize: none;
+                    height: 12rem;
+                    padding: 0 .5rem;        
+                }
+
+                &-text {
+                    padding: 1rem .5rem;
+                }
+            }
+
+            .submit {
+                letter-spacing: 1px;
+                color: white;
+                width: 0;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid white;
+                text-align: center;
+                transition: width .5s ease;
+            }
+            .submit:hover {
+                width: 25%;
+            }            
+        }
+    }
+}

@@ -26,6 +26,16 @@
 }
 
 
+////////////////////BTN ANIMATION PULSE
+@keyframes pulse {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
 
-
+    100% {
+        opacity: 0;
+        transform: scale(2.75);
+    }
+}
 

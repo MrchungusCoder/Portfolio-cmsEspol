@@ -21,73 +21,69 @@
 
 <body>
 
- 
+ <button id="toggle_btn" class="toggle">Open</button>
+
 <!-- LEFT SECTION -->
-        <div class="main_container--navbar navar active">
+<div class="main_container--navbar">
+      
+    <button class="close">X</button>
 
-            <!-- <button id="toggle_btn" class="toggle_menu">Open</button>
-            <button class="closer close">X</button> -->
+        <nav class="navbar">
 
-            <nav class="navbar">
+            <div class="navbar_logo">
+                <img src="https://image.flaticon.com/icons/png/512/3884/3884465.png" alt="" class="logo" width="80px">
+            </div>
 
-                <div class="navbar_logo">
-                    <img src="https://image.flaticon.com/icons/png/512/3884/3884465.png" alt="" class="logo" width="80px">
-                </div>
+            <ul class="navbar_container">
+                <li class="navbar_container--list">
+                    <a href="#home" class="navbar_container--link" id="link">Home</a>
+                </li>
 
-                <ul class="navbar_container">
-                    <li class="navbar_container--list">
-                        <a href="#home" class="navbar_container--link" id="link">Home</a>
-                    </li>
+                <li class="navbar_container--list">
+                    <a href="#aboutSection" class="navbar_container--link">About me</a>
+                </li>
 
-                    <li class="navbar_container--list">
-                        <a href="#aboutSection" class="navbar_container--link">About me</a>
-                    </li>
+                <li class="navbar_container--list">
+                    <a href="#projects" class="navbar_container--link">Proyects</a>
+                </li>
 
-                    <li class="navbar_container--list">
-                        <a href="" class="navbar_container--link">Proyects</a>
-                    </li>
+                <li class="navbar_container--list">
+                    <a href="#contact" class="navbar_container--link">Contact</a>
+                </li>
+            </ul>
 
-                    <li class="navbar_container--list">
-                        <a href="" class="navbar_container--link">Contact</a>
-                    </li>
-                </ul>
+        </nav>
 
-                <!-- <button class="btn" onclick="darkrai">Dark mode</button> -->
+</div>
 
-            </nav>
+<!-- RIGHT SECTION -->
+<div class="main_container--right">
+
+        <!-- HERO -->
+    <section class="hero" id="home">
+		<!--<video src="/Pexels Videos 4098.mp4" id="video" autoplay muted loop>
+            </video> -->
+        <div class="hero_container">
+
+            <p class="hero_container--word hero_container--effect">Hello!</p>
+            <h1 class="hero_container--author hero_container--effect">I'm Diego Riera</h1>
+
+            <span class="hero_container--span">
+                <p class="hero_container--subtitle">Front End Developer</p>
+            </span>
 
         </div>
 
-<!-- RIGHT SECTION -->
-        <div class="main_container--right">
-
-        <!-- HERO -->
-        
-
-           <section class="hero" id="home">
-				<!-- <video src="/Pexels Videos 4098.mp4" id="video" autoplay muted loop>
-                </video> -->
-                <div class="hero_container">
-
-                    <p class="hero_container--word hero_container--effect">Hello!</p>
-                    <h1 class="hero_container--author hero_container--effect">I'm Diego Riera</h1>
-
-                    <span class="hero_container--span">
-                        <p class="hero_container--subtitle">Front End Developer</p>
-                    </span>
-
-                </div>
-
-           </section>
+    </section>
 
 <!-- ABOUT ME SECTION-->
            
     <section class="aboutMe" id="aboutSection">
-            
-        <div class="about_container">
 
+        <div class="about_container">
+          
             <div class="about_container--right">
-              
+             
                 <div class="box">
                      
                      <div class="img_container">
@@ -109,8 +105,8 @@
                       </p>
                     </div>
                 
-                    <button class="hire_btn">
-                        Contact me
+                    <button class="hire_btn btn_hover">
+                        <a href="#contact">Contact Me</a>
                     </button>
                 </div>
               
@@ -118,19 +114,19 @@
                 
                     <div class="follow_icons follow1">
                         <a href="https://github.com/MrchungusCoder/Portfolio-cmsEspol.git" target="_blank" class="img-custom">
-                            <i class="fab fa-github-square fa-4x"></i>
+                            <i class="fab fa-github-square fa-4x btn_hover"></i>
                         </a>
                     </div>
                     
                     <div class="follow_icons follow3">
-                        <a class="img-custom">
-                            <i class="fab fa-linkedin fa-4x"></i>
+                        <a href="https://www.linkedin.com/in/diego-riera-ramirez-aa979920b/" target="_blank" class="img-custom">
+                            <i class="fab fa-linkedin fa-4x btn_hover"></i>
                         </a>
                     </div>
 
                     <div class="follow_icons follow2">
                         <a class="img-custom">
-                            <i class="fab fa-twitter-square fa-4x"></i>
+                            <i class="fab fa-twitter-square fa-4x btn_hover"></i>
                         </a>
                     </div>
                 
@@ -141,15 +137,14 @@
       
             <div class="about_container--left">
                     <h2 class="about_container--title_1 about_container--title">
-                        
-                        <div class="title_bar">About Me</div>
+                        About Me
                     </h2>
     
                     <p class="about_container--content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod beatae molestias, veritatis corrupti non nulla fugit impedit debitis asperiores labore iusto ullam tempore a accusamus ipsam dignissimos doloribus nihil dolore!
                     </p>
     
                     <h2 class="about_container--title_2 about_container--title">
-                        <div class="title_bar">Technologies</div>
+                        Technologies
                     </h2>
     
                     <div class="about_container--icons">
@@ -157,22 +152,146 @@
                         <i class="fab fa-css3-alt"></i>
                         <i class="fab fa-js"></i>
                     </div>
+            </div>
+            
+        </div>
+
+        <div class="about_container--skills">
+
+            <div class="skills_card">
+                <div class="skills_content">
+                    <div class="skills_content--img">
+                        <img src="./hands-people-woman-working.jpg" alt="">
+                    </div>
+                    <h2 class="skills_content--title">Design</h2>
+                    <p class="skills_content--body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus sed nihil suscipit obcaecati. Quibusdam esse reiciendis dolores nostrum at.</p>
                 </div>
-                  
-    </div>
+            </div>
 
-<!-- PROJECTS SECTION -->
-
+            <div class="skills_card">
+                <div class="skills_content">
+                    <div class="skills_content--img">
+                        <img src="./pexels-photo-574070.jpeg" alt="">
+                    </div>
+                    <h2 class="skills_content--title">Development</h2>
+                    <p class="skills_content--body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus sed nihil suscipit obcaecati. Quibusdam esse reiciendis dolores nostrum at.</p>
+                </div>
+            </div>
+            <div class="skills_card">
+                <div class="skills_content">
+                    <div class="skills_content--img">
+                        <img src="./pexels-photo-3681708.jpeg" alt="">
+                    </div>
+                    <h2 class="skills_content--title">Creativity</h2>
+                    <p class="skills_content--body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus sed nihil suscipit obcaecati. Quibusdam esse reiciendis dolores nostrum at.</p>
+                </div>
+            </div>
 
 
         </div>
 
+    </section>
+<!-- PROJECTS SECTION -->
 
 
+    <section class="projects" id="projects">
+        <h2 class="projects_title">My Projects</h2>
+
+        <div class="projects_container">
+
+            <div class="card">
+                <div class="card_content">
+                    <h2 class="card_content--title">Fylo website</h2>
+                    <p class="card_content--body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus sed nihil suscipit obcaecati. Quibusdam esse reiciendis dolores nostrum at.</p>
+                    <a href="https://fylowebsitefrontendmentor.netlify.app/" target="_blank"><button class="projects_btn btn_hover">Watch Live</button></a>
+                    <a href="https://github.com/MrchungusCoder/frontend-mentor-fylo-landing-page.git" target="_blank"><button class="projects_btn btn_hover">See repo</button></a>
+                </div>
+            </div>
+
+            <div class="card card2">
+                <div class="card_content">
+                    <h2 class="card_content--title">Video Game</h2>
+                    <p class="card_content--body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus sed nihil suscipit obcaecati. Quibusdam esse reiciendis dolores nostrum at.</p>
+                    <a href="" target="_blank"><button class="projects_btn btn_hover">Watch live</button></a>
+                    <a href="" target="_blank"><button class="projects_btn btn_hover">See repo</button></a>
+                </div>
+            </div>
+
+            <div class="card card3">
+                <div class="card_content">
+                    <h2 class="card_content--title">Guess my number</h2>
+                    <p class="card_content--body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus sed nihil suscipit obcaecati. Quibusdam esse reiciendis dolores nostrum at.</p>
+                    <a href="" target="_blank"><button class="projects_btn btn_hover">Watch live</button></a>
+                    <a href="" target="_blank"><button class="projects_btn btn_hover">See repo</button></a>
+                </div>
+            </div>
+
+            <div class="card card4">
+                <div class="card_content">
+                    <h2 class="card_content--title">Netflix clone</h2>
+                    <p class="card_content--body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui natus sed nihil suscipit obcaecati. Quibusdam esse reiciendis dolores nostrum at.</p>
+                    <a href="" target="_blank"><button class="projects_btn btn_hover">Watch live</button></a>
+                    <a href="" target="_blank"><button class="projects_btn btn_hover">See repo</button></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- CONTACT SECTION -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="container-form">
+            <div class="left-side">
+                <h2>Contact Me</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea minima voluptates dolore nesciunt ratione totam soluta debitis, illo inventore aut.</p>
+        
+                <div class="icon">
+                    <div class="icon-box">
+                        <i class="fab fa-github fa-3x"></i>
+                        <a id="profile-link" class="user-links"  href="https://github.com/MrchungusCoder"  target="_blank">GitHub</a>
+                    </div>
+               
+                   <div class="icon-box">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                        <a id="profile-link" target="_blank" class="user-links"  href="https://www.freecodecamp.org/fccbf8bb68f-7a6c-41c8-a617-10c78bd6d8fc">LinkedIn</a>
+                    </div>
+
+                        
+                   <div class="icon-box">
+                    <i class="fab fa-free-code-camp fa-3x"></i>
+                    <a id="profile-link" target="_blank" class="user-links"  href="https://www.freecodecamp.org/fccbf8bb68f-7a6c-41c8-a617-10c78bd6d8fc">Free Code Camp</a>
+                </div>
+                </div>
+
+            </div>
+
+            <div class="right-side">
+
+                <form action="" class="form">
+
+                    <input type="text" name="text" id="text" class="form-box form-text" placeholder="Enter your name">
+
+                    <input type="email" name="email" id="email" class="form-box form-text" placeholder="Enter a valid email adress">
+
+                    <textarea class="form-box textarea" name="" id="" placeholder="Enter your message"></textarea>
+
+                    <a href="" class="submit"> Submit</a>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
 
 
-<script src="/scripts.js">
+</div>
 
-</script>
+
+<script src="./scripts.js"></script>
+
+
 </body>
+
 </html>

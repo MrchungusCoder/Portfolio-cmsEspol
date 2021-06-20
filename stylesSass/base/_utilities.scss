@@ -12,10 +12,13 @@ $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
-$linear-bg-color:linear-gradient(
+$linear-bg-color: linear-gradient(
     to right,
     $color-primary-light, 
-    $color-primary-dark);;
+    $color-primary-dark);
+
+$linear-bg-color-card:linear-gradient(
+        to right, rgba(126, 213, 111, .8), rgba(40, 180, 133, .9));
 
 $color-gray-dark: #777;
 $color-black: #000;
@@ -25,6 +28,7 @@ $title: 'Lato', sans-serif;
 $paragraph: 'Open Sans', sans-serif;
 
 // FONT SIZES
+$title_size: 4rem;
 $subtitles_sizes: 3.6rem;
 $paragraph_sizes: 1.6rem;
 
